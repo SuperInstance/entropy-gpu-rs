@@ -1,0 +1,20 @@
+[package]
+name = "entropy-gpu"
+version = "0.1.0"
+edition = "2021"
+description = "GPU-ready batch entropy computation (pure Rust data structures + operations)"
+license = "MIT"
+repository = "https://github.com/SuperInstance/entropy-gpu-rs"
+keywords = ["entropy", "kl-divergence", "mutual-information", "transfer-entropy", "gpu"]
+categories = ["mathematics", "science"]
+
+[dependencies]
+rayon = "1.10"
+
+[dev-dependencies]
+approx = "0.5"
+rand = "0.8"
+
+[lib]
+name = "entropy_gpu"
+path = "src/lib.rs"
